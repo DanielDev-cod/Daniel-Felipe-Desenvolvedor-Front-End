@@ -1,54 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#root{
-    --color-black: #121212;
-    --color-orange: #fc370c;
-    --color-inicio: #BFBFBF;
+#root {
+  --color-black: #191b1f;
+  --color-orange: #fc370c;
+  --color-inicio: #bfbfbf;
+  --color-branco: #ffff;
 }
 
-body{
-    background-color: #121212;
-    font-family: "Open Sans", sans-serif;
-    color: #BFBFBF;
+body {
+  
+  font-family: "Inter", sans-serif;
+  color: #bfbfbf;
 }
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
+ 
 header{
-   background-color: #121212;
-   color: #BFBFBF; 
-   padding: 15px 20px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
+    background-color: #191b1f;
+    display: flex;
+    padding: 15px 20px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
 
-.logo{
-    max-width: 150px;
 }
-a{
-    text-decoration: none;
+nav a {
+  color: #bfbfbf;
+  text-decoration: none;
+  margin-inline: 50px;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  text-align: center;
 }
-nav a{
-    color: #BFBFBF;
-    margin-inline: 50px;
-    font-size: 25px;
-    font-family: "Open Sans", sans-serif;
-   font-weight: 600;
+.code-logo{
+    display: flex;
+    gap: 12px;
 }
-
-.button-cnt{
-    background-color: #fc370c;
-    padding: 15px;
+.code-logo > img{
+  width: 30px;
 }
-
-.button-cnt a{
-    color: #BFBFBF;
-    font-family: "Open Sans", sans-serif;
+.texto-header{
+    font-family:"Inter", sans-serif;
+    font-size: 24px;
     font-weight: 700;
+    color: #ffff;
 }
+.Download-logo{
+  display: flex;
+  gap: 12px;
+}
+.Download-logo > img{
+  color: #ffff;
+}
+.bottum-curri{
+  background-color: #fc370c;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.texto-curri{
+  font-family:"Inter", sans-serif;
+  color: #ffff;
+  font-size: 20px;
+}
+
+.secao-principal{
+  display: flex;
+  justify-content: center;
+  margin-inline: 20px;
+}
+
+
