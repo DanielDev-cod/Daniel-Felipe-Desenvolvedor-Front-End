@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-#root {
+:root {
   --color-black: #191b1f;
   --color-orange: #fc370c;
   --color-inicio: #bfbfbf;
@@ -16,9 +16,10 @@
 body {
   
   font-family: "Inter", sans-serif;
-  color: #bfbfbf;
+  color: var(--color-inicio);
 }
 img {
+  display: block;
   max-width: 100%;
 }
  
@@ -27,8 +28,9 @@ header{
     display: flex;
     padding: 15px 20px;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 
 }
 nav a {
