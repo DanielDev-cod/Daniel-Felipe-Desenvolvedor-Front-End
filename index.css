@@ -14,7 +14,7 @@
 }
 
 body {
-  
+  background-color: var(--color-black);
   font-family: "Inter", sans-serif;
   color: var(--color-inicio);
 }
@@ -23,12 +23,13 @@ img {
   max-width: 100%;
 }
  
+/* Navegação */
+
 header{
-    background-color: #191b1f;
     display: flex;
     padding: 15px 20px;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     cursor: pointer;
 
@@ -74,10 +75,43 @@ nav a {
   font-size: 20px;
 }
 
+/*secão de apresentação */
+
 .secao-principal{
+  max-width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  padding: 70px 10px;
   justify-content: center;
-  margin-inline: 20px;
+  margin-inline: 50px;
+  gap: 15px;
+}
+
+.dev-front{
+  background: var(--color-orange);
+  padding: 5px 5px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.principa-dev h1{
+  margin-top: 100px;
+  font-family: "Inter", sans-serif;
+  font-size: 4em;
+  margin: 0 auto;
+}
+
+.texto-alte{
+  color: var(--color-orange);
+}
+
+
+.photo-dani img{
+  width: 300px;
+  height: 298px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--color-orange);
 }
 
 
