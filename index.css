@@ -1,117 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root{
+    --cor01: #14b8a6;
+    --cor02: #ffffff;
+    --cor03: #f9fafb;
+    --cor04: #1c1a1d;
 }
-:root {
-  --color-black: #191b1f;
-  --color-orange: #fc370c;
-  --color-inicio: #bfbfbf;
-  --color-branco: #ffff;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-  background-color: var(--color-black);
-  font-family: "Inter", sans-serif;
-  color: var(--color-inicio);
+img{
+    display: block;
+    max-width: 100%;
 }
-img {
-  display: block;
-  max-width: 100%;
-}
- 
-/* Navegação */
 
-header{
+body{
+    background: var(--cor04);
+}
+
+.container{
     display: flex;
-    padding: 15px 20px;
-    text-align: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    cursor: pointer;
+    flex-wrap: wrap;
+    padding: 100px 50px;
+    margin-inline: 150px;
+}
 
+.content h1{
+    font-size: 5em;
+    font-family: "Inter", sans-serif;
+    color: var(--cor02);
 }
-nav a {
-  color: #bfbfbf;
-  text-decoration: none;
-  margin-inline: 50px;
-  font-size: 20px;
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-  text-align: center;
+
+.cor-dev{
+    color: var(--cor01);
 }
-.code-logo{
+
+.content p{
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--cor01);
+    font-family: "Inter", sans-serif;
+}
+
+.button-secao{
     display: flex;
-    gap: 12px;
-}
-.code-logo > img{
-  width: 30px;
-}
-.texto-header{
-    font-family:"Inter", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: #ffff;
-}
-.Download-logo{
-  display: flex;
-  gap: 12px;
-}
-.Download-logo > img{
-  color: #ffff;
-}
-.bottum-curri{
-  background-color: #fc370c;
-  padding: 10px 15px;
-  border-radius: 5px;
+    margin-top: 20px;
+    gap: 15px;
 }
 
-.texto-curri{
-  font-family:"Inter", sans-serif;
-  color: #ffff;
-  font-size: 20px;
+.btn-projct button{
+    font-family: "Inter", sans-serif;
+    background: var(--cor01);
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    color: var(--cor02);
+    font-size: 1.25em;
 }
 
-/*secão de apresentação */
-
-.secao-principal{
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 70px 10px;
-  justify-content: center;
-  margin-inline: 50px;
-  gap: 15px;
+.bnt-contato button{
+    font-family: "Inter", sans-serif;
+    background: var(--cor03);
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    color: var(--cor01);
+    font-size: 1.25em;
 }
-
-.dev-front{
-  background: var(--color-orange);
-  padding: 5px 5px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.principa-dev h1{
-  margin-top: 100px;
-  font-family: "Inter", sans-serif;
-  font-size: 4em;
-  margin: 0 auto;
-}
-
-.texto-alte{
-  color: var(--color-orange);
-}
-
-
-.photo-dani img{
-  width: 300px;
-  height: 298px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid var(--color-orange);
-}
-
-
