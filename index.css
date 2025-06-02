@@ -31,9 +31,10 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 1.5em;
+    padding: 2em;
     cursor: pointer;
 }
 
@@ -53,6 +54,7 @@ header{
 .list-nav{
     display: flex;
     flex-wrap: wrap;
+    margin-right: 15px;
     color: var(--cor02);
     font-size: 1.5em;
     gap: 2rem;
@@ -116,6 +118,7 @@ li:hover::after{
     text-decoration: none;
     font-size: 1.125em;
     color: var(--cor02);
+    font-weight: bold;
 }
 
 .btt-cnt{
@@ -129,6 +132,7 @@ li:hover::after{
     text-decoration: none;
     font-size: 1.125em;
     color: var(--cor01);
+    font-weight: bold;
 }
 
 .circulo{
