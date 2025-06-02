@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-
 :root{
-    --cor01: #fc913a;
+    --cor01: #0daf5d;
     --cor02: #e0e4ce;
     --cor03: #39cf48;
     --cor04: #1c1a1d;
@@ -28,12 +26,14 @@ body{
     color: white;
 }
 
+/* Parte da navegação */
+
 header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 1.5em;
     cursor: pointer;
 }
 
@@ -54,7 +54,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     color: var(--cor02);
-    font-size: 1.5rem;
+    font-size: 1.5em;
     gap: 2rem;
 }
 
@@ -63,6 +63,87 @@ li:hover::after{
     display: block;
     max-width: 100%;
     height: 4px;
-    background-color: #fc913a;
-    transition: 0.5d;
+    background-color: var(--cor01);
 }
+
+/* fim da navegação */
+
+/* começo do corpo da pagina */
+
+.section-desen{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 70px;
+    margin: 0 auto;
+}
+
+.span-dev{
+    background-color: var(--cor01);
+    font-size: 1.125em;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.dev-verde{
+    color: var(--cor01);
+}
+.hero h1{
+    font-size: 5em;
+    margin-top: 25px;
+}
+
+.hero p{
+    margin-top: 10px;
+   font-size: 1.5em;
+   text-align: justify;
+}
+
+.btt-main{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.btt-proj{
+    background: var(--cor01);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btt-proj a{
+    text-decoration: none;
+    font-size: 1.125em;
+    color: var(--cor02);
+}
+
+.btt-cnt{
+    background: var(--cor02);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btt-cnt a{
+    text-decoration: none;
+    font-size: 1.125em;
+    color: var(--cor01);
+}
+
+.circulo{
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 420px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.circulo img{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+}
+  
