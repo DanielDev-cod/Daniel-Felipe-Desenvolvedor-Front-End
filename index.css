@@ -73,11 +73,11 @@ li:hover::after{
 .github{
     background-color: var(--cor01);
     font-family: "Inter", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 5px;
-    padding: 0.5rem;
+    padding: 0.3rem;
     color: var(--cor02);
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -89,7 +89,7 @@ li:hover::after{
 
 .introducao{
     display: flex;
-    width: 1120px;
+    max-width: 1200px;
     align-items: center;
     padding: 1.875rem;
     margin: 0 auto;
@@ -126,6 +126,9 @@ li:hover::after{
 }
 
 .btt-proj{
+    width: 180px;
+    height: 45px;
+    text-align: center;
     background: var(--cor01);
     border-radius: 8px;
     padding: 10px;
@@ -140,6 +143,9 @@ li:hover::after{
 }
 
 .btt-cnt{
+    width: 180px;
+    height: 45px;
+    text-align: center;
     background: var(--cor02);
     border-radius: 8px;
     padding: 10px;
@@ -166,6 +172,77 @@ li:hover::after{
   position: absolute;
   bottom: 0;
   width: 100%;
-
 }
+
+.center-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    gap: 3rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* Sobre */
+
+.sobre-section {
+    background-color: rgba(0, 0, 0, 0.05); /* simulando bg-muted/50 */
+    padding: 4rem 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .sobre-section {
+      padding: 6rem 1rem;
+    }
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .conteudo {
+      flex-direction: row;
+    }
+  }
+
+  .imagem,
+  .texto {
+    flex: 1;
+  }
+
+  .imagem-estilizada {
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+  }
+
+  .texto h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+  }
+
+  .destaque {
+    color: var(--cor01); 
+  }
+
+  .texto p {
+    color: var(--cor02); 
+    margin-top: 1rem;
+    line-height: 1.6;
+  }
+
+
   
