@@ -34,78 +34,129 @@ body {
 
 /* Parte da navegação */
 
+
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px 40px;
-  background-color: var(--cor04);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  color: var(--cor02);
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  position: relative;
 }
 
-/* Logo */
 .logo {
-  font-size: 1.8rem;
+  font-size: 1.5em;
   font-weight: bold;
 }
+
 .f-color-logo {
-  color: #2ecc71;
+  color: #0daf5d; 
 }
 
-/* Navegação */
-.nav-bar .list-nav {
-  list-style: none;
+
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.menu-btn span {
+  background: white;
+  height: 3px;
+  width: 25px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+
+.nav-bar {
   display: flex;
-  gap: 30px;
-}
-.nav-bar .list-nav li a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: var(--cor02);
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-.nav-bar .list-nav li a:hover {
-  color: #2ecc71;
-}
-.nav-bar .list-nav li a.active {
-  border-bottom: 2px solid #2ecc71;
 }
 
-/* Botão GitHub */
+.list-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.list-nav li {
+  list-style: none;
+}
+
+.list-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.list-nav a:hover {
+  color: #0daf5d;
+}
+
+
 .github {
-  background-color: var(--cor01);
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 6px;
+  color: white;
   text-decoration: none;
-  font-size: 0.95rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  background: #0daf5d;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
 }
+
 .github:hover {
-  background-color: #444d56;
-  transform: translateY(-2px);
+  background: var(--cor03);
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 20px;
+  .menu-btn {
+    display: flex;
   }
 
-  .nav-bar .list-nav {
+  .nav-bar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #111;
+    width: 100%;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    padding: 20px 0;
+  }
+
+  .nav-bar.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .list-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Ícone hambúrguer -> X */
+  .menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* GitHub centralizado no mobile */
+  .github {
+    margin-top: 15px;
   }
 }
+
 
 /* fim da navegação */
 
